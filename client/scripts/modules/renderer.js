@@ -62,7 +62,6 @@ function setSize() {
 
 function render() {
   RENDERER.time = clock.getElapsedTime();
-  RENDERER.uTime = {value:clock.getElapsedTime()};
   if(SCENE){
     if(SCENE.uTime){
       SCENE.uTime.value = clock.getElapsedTime();
@@ -84,7 +83,6 @@ const RENDERER = {
   scene: null,
   controls: null,
   time: null,
-  uTime:{value:0},
   render,
 };
 export {

@@ -67,7 +67,6 @@ function create() {
 
 
         uniform vec3 uSunPosition;
-        uniform float uTime;
 
 
 
