@@ -62,6 +62,11 @@ function setSize() {
 
 function render() {
   RENDERER.time = clock.getElapsedTime();
+  if(SCENE){
+    if(SCENE.uTime){
+      SCENE.uTime.value = clock.getElapsedTime();
+    };
+  };
   RENDERER.controls.update();
   RENDERER.stats.update();
   RENDERER.renderer.render(RENDERER.scene, RENDERER.camera);

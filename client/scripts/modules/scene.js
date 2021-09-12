@@ -29,6 +29,7 @@ function create() {
 
 const SCENE = {
   create,
+  uTime:{value:0},
 };
 
 export {
